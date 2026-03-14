@@ -2,7 +2,7 @@ import gradio as gr
 import tensorflow as tf
 import numpy as np
  
-model = tf.keras.models.load_model('melanoma_best-2.h5')
+model = tf.keras.models.load_model('melanoma_best-2.h5', compile=False)
  
 def predict_skin(image):
     if image is None:
