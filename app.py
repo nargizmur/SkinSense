@@ -301,4 +301,4 @@ with gr.Blocks(css=css, title="SkinSense") as iface:
     submit_btn.click(fn=predict_skin, inputs=image_input, outputs=output)
     gr.HTML(html_awareness)
 
-iface.launch(share=True) 
+iface.launch(server_name="0.0.0.0", server_port=7860)
